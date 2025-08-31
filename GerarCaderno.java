@@ -20,14 +20,14 @@ public class GerarCaderno {
 
             doc.createParagraph().createRun().setText("ATIVIDADE PRÁTICA\nCADERNO DE EXERCICIOS E RESPOSTAS");
             doc.createParagraph().createRun().setText("\n");
-            doc.createParagraph().createRun().setText("NOME ALUNO – RU: 1234567");
-            doc.createParagraph().createRun().setText("SUA CIDADE – SEU ESTADO");
+            doc.createParagraph().createRun().setText("Roberto Dias dos Santos – RU: 4645852");
+            doc.createParagraph().createRun().setText("São Paulo - SP");
             doc.createParagraph().createRun().setText("2025\n");
 
             XWPFParagraph link = doc.createParagraph();
-            link.createRun().setText("Link do projeto no GitHub ou similar:");
+            link.createRun().setText("https://github.com/bertoluzoficial");
             XWPFParagraph link2 = doc.createParagraph();
-            link2.createRun().setText("[Coloque aqui o link do seu repositório]");
+            link2.createRun().setText("https://github.com/bertoluzoficial/API-Tarefas");
 
             XWPFParagraph t1 = doc.createParagraph();
             t1.createRun().setText("Teste 1 – Inserir novas tarefas e verificar se aparecem na lista");
@@ -35,7 +35,7 @@ public class GerarCaderno {
             t1det.createRun().setText(
                     "Tarefa especial (obrigatória para o teste):\n" +
                     "- Nome: Desenvolvimento da API\n" +
-                    "- Responsável: Roberto – RU 1234567\n" +
+                    "- Responsável: Roberto Dias dos Santos – RU 4645852\n" +
                     "- Data de entrega: 12/12/2025"
             );
             XWPFParagraph t1endpoint = doc.createParagraph();
@@ -44,7 +44,7 @@ public class GerarCaderno {
             t1json.createRun().setText("{\n" +
                     "  \"nome\": \"Desenvolvimento da API\",\n" +
                     "  \"dataEntrega\": \"2025-12-12\",\n" +
-                    "  \"responsavel\": \"Roberto - RU 1234567\"\n" +
+                    "  \"responsavel\": \"Roberto Dias dos Santos – RU 4645852\"\n" +
                     "}");
             XWPFParagraph t1print = doc.createParagraph();
             t1print.createRun().setText("(inserir aqui print do Postman)");
@@ -64,7 +64,7 @@ public class GerarCaderno {
             t3json.createRun().setText("{\n" +
                     "  \"nome\": \"Desenvolvimento da API - Atualizado\",\n" +
                     "  \"dataEntrega\": \"2025-12-15\",\n" +
-                    "  \"responsavel\": \"Roberto - RU 1234567\"\n" +
+                    "  \"responsavel\": \"Roberto Dias dos Santos – RU 4645852\"\n" +
                     "}");
             XWPFParagraph t3print = doc.createParagraph();
             t3print.createRun().setText("(inserir aqui print do Postman mostrando que a tarefa foi atualizada)");
